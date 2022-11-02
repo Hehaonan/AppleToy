@@ -5,7 +5,7 @@
 //  Created by hehaonan on 2022/8/29.
 //
 
-#import "ViewController.h"
+#import "MineViewController.h"
 #import "MyTestStruct.h"
 
 @interface CompareNum:NSObject
@@ -24,38 +24,37 @@
 
 /* 返回两个数的最大值 */
 - (int)max:(int)num1 secondNumber:(int)num2 {
-   /* 声明局部变量 */
-   int result;
-   if (num1 > num2) {
-      result = num1;
-   } else {
-      result = num2;
-   }
-   return result;
+    /* 声明局部变量 */
+    int result;
+    if (num1 > num2) {
+        result = num1;
+    } else {
+        result = num2;
+    }
+    return result;
 }
 
 @end
 
-//
-@interface ViewController ()
+@interface MineViewController ()
 @end
 
 const int TOP = 100;
 
 // 预处理器
 #if !defined(MESSAGE)
-    #define MESSAGE "message"
+#define MESSAGE "message"
 #endif
 
 #define BIGGER(x,y) ((x) > (y) ? (x) : (y))
 
-@implementation ViewController
+@implementation MineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"Max between 20 and 10 is %d\n", BIGGER(20, 10));
     NSLog(@"test defined() MESSAGE=%s\n", MESSAGE);
-
+    
     int  i = 17;
     float c = 3.14;  /* ascii value is 99 */
     int sum;
@@ -80,11 +79,11 @@ const int TOP = 100;
     [self.view addSubview:view2];
     
     [self testPointer];
-//    [self testStruct];
+    //    [self testStruct];
 }
 
 - (void) pushController {
-    UIViewController *uiView = [[UIViewController alloc]init];
+    UIViewController *uiView = [UIViewController new];
     uiView.view.backgroundColor = [UIColor whiteColor];
     uiView.navigationItem.title = @"标题";
     uiView.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"右侧按钮" style:UIBarButtonItemStylePlain target:self action:nil];
@@ -103,7 +102,7 @@ const int TOP = 100;
     NSLog(@"Max value is : %d\n", ret );
     compare.origin=@"add";
     NSLog(@"origin value is : %@\n", compare.origin);
-
+    
     // 字符串转换
     NSString *temp = @"find max [119,199]";
     NSString *retStr = [NSString stringWithFormat: @"%d",ret];
@@ -129,15 +128,15 @@ const int TOP = 100;
     
     int a = 1025; // = 00000000 00000000 00000100 00000001
     int *p = &a;
-    NSLog(@"p -> Address = %d , value = %d", p, *p);
+    //NSLog(@"p -> Address = %d , value = %d", p, *p);
     char *c ;
     c = (char*)p;
-    NSLog(@"c -> Address = %d , value = %d", c, *c);// = 00000001
-    NSLog(@"(c+1) -> Address = %d , value = %d", c+1, *(c+1)); // = 00000100
+    //NSLog(@"c -> Address = %d , value = %d", c, *c);// = 00000001
+    //NSLog(@"(c+1) -> Address = %d , value = %d", c+1, *(c+1)); // = 00000100
     
     void *p1;
     p1 = p ;
-    NSLog(@"p1 -> Address = %d", p1); // 没有任何类型的映射 不到打印*p1
+    //NSLog(@"p1 -> Address = %d", p1); // 没有任何类型的映射 不到打印*p1
 }
 
 - (void) testStruct{
