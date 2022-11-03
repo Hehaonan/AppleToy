@@ -8,6 +8,7 @@
 #import "SceneDelegate.h"
 #import "HelloWorldViewController.h"
 #import "HomeViewController.h"
+#import "VideoViewController.h"
 
 @interface SceneDelegate ()<UITabBarControllerDelegate>
 
@@ -25,15 +26,7 @@
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
     
     HomeViewController *home = [HomeViewController new];
-    home.tabBarItem.title = @"首页";
-    home.tabBarItem.image = [UIImage imageNamed:@"page.png"];
-    home.tabBarItem.selectedImage = [UIImage imageNamed:@"page_selected.png"];
-    
-    UIViewController *video = [[UIViewController alloc]init];
-    video.view.backgroundColor = [UIColor lightGrayColor];
-    video.tabBarItem.title = @"视频";
-    video.tabBarItem.image = [UIImage imageNamed:@"video.png"];
-    video.tabBarItem.selectedImage = [UIImage imageNamed:@"video_selected.png"];
+    VideoViewController *video = [[VideoViewController alloc]init];
     
     UIViewController *recommend = [[UIViewController alloc]init];
     recommend.view.backgroundColor = [UIColor whiteColor];
@@ -48,10 +41,6 @@
     mine.tabBarItem.selectedImage = [UIImage imageNamed:@"home_selected.png"];
     
     HelloWorldViewController *helloWorld = [[HelloWorldViewController alloc] init];
-    helloWorld.view.backgroundColor = [UIColor whiteColor];
-    helloWorld.tabBarItem.title = @"HelloWorld";
-    helloWorld.tabBarItem.image = [UIImage imageNamed:@"home.png"];
-    helloWorld.tabBarItem.selectedImage = [UIImage imageNamed:@"home_selected.png"];
     
     [tabBarController setViewControllers:@[home,video,recommend,mine,helloWorld]];
     tabBarController.delegate = self;

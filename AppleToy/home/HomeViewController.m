@@ -12,6 +12,16 @@
 
 @implementation HomeViewController
 
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        self.tabBarItem.title = @"首页";
+        self.tabBarItem.image = [UIImage imageNamed:@"page.png"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"page_selected.png"];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

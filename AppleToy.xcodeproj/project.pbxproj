@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B118A7E2911265700DFD006 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1B118A7D2911265700DFD006 /* icon.bundle */; };
 		1B118A802911353800DFD006 /* icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B118A7F2911353800DFD006 /* icon.xcassets */; };
+		1B2175F12913E30B00B4EDFB /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2175F02913E30B00B4EDFB /* VideoViewController.m */; };
 		1B513E082912778B0043E7EE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B513E072912778B0043E7EE /* HomeViewController.m */; };
 		1B8DD2B428BCA5BA00661EA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8DD2B328BCA5BA00661EA3 /* AppDelegate.m */; };
 		1B8DD2B728BCA5BA00661EA3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8DD2B628BCA5BA00661EA3 /* SceneDelegate.m */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		1B118A7D2911265700DFD006 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = SOURCE_ROOT; };
 		1B118A7F2911353800DFD006 /* icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = icon.xcassets; sourceTree = "<group>"; };
+		1B2175EF2913E30B00B4EDFB /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		1B2175F02913E30B00B4EDFB /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		1B513E06291277740043E7EE /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		1B513E072912778B0043E7EE /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		1B8DD2AF28BCA5BA00661EA3 /* AppleToy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleToy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B2175EE2913E2EC00B4EDFB /* video */ = {
+			isa = PBXGroup;
+			children = (
+				1B2175EF2913E30B00B4EDFB /* VideoViewController.h */,
+				1B2175F02913E30B00B4EDFB /* VideoViewController.m */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
 		1B513E022912760A0043E7EE /* helloworld */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +106,7 @@
 				1B8DD2B528BCA5BA00661EA3 /* SceneDelegate.h */,
 				1B8DD2B628BCA5BA00661EA3 /* SceneDelegate.m */,
 				1B513E03291276C40043E7EE /* home */,
+				1B2175EE2913E2EC00B4EDFB /* video */,
 				1B513E022912760A0043E7EE /* helloworld */,
 				1B8DD2BE28BCA5BB00661EA3 /* Assets.xcassets */,
 				1B8DD2C028BCA5BB00661EA3 /* LaunchScreen.storyboard */,
@@ -187,6 +200,7 @@
 				1BAFBE8028BDF136003DB051 /* MyTestStruct.m in Sources */,
 				1B8DD2B428BCA5BA00661EA3 /* AppDelegate.m in Sources */,
 				1B8DD2C528BCA5BB00661EA3 /* main.m in Sources */,
+				1B2175F12913E30B00B4EDFB /* VideoViewController.m in Sources */,
 				1B8DD2B728BCA5BA00661EA3 /* SceneDelegate.m in Sources */,
 				1B513E082912778B0043E7EE /* HomeViewController.m in Sources */,
 			);

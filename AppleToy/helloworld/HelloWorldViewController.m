@@ -38,7 +38,7 @@
 @interface HelloWorldViewController ()
 @end
 
-const int TOP = 100;
+const int TOP = 150;
 
 // 预处理器
 #if !defined(MESSAGE)
@@ -48,6 +48,17 @@ const int TOP = 100;
 #define BIGGER(x,y) ((x) > (y) ? (x) : (y))
 
 @implementation HelloWorldViewController
+
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        self.view.backgroundColor = [UIColor whiteColor];
+        self.tabBarItem.title = @"HelloWorld";
+        self.tabBarItem.image = [UIImage imageNamed:@"home.png"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"home_selected.png"];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -70,7 +81,7 @@ const int TOP = 100;
     
     UIView *view2 = [[UIView alloc] init];
     view2.backgroundColor = [UIColor greenColor];
-    view2.frame = CGRectMake(150,150,100,100);
+    view2.frame = CGRectMake(150,200,100,100);
     [view2 addGestureRecognizer:tap];
     
     // 添加View
