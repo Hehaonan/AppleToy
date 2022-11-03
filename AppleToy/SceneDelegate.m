@@ -6,7 +6,7 @@
 //
 
 #import "SceneDelegate.h"
-#import "MineViewController.h"
+#import "HelloWorldViewController.h"
 #import "HomeViewController.h"
 
 @interface SceneDelegate ()<UITabBarControllerDelegate>
@@ -24,32 +24,36 @@
     
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
     
-    HomeViewController *homeController1 = [HomeViewController new];
-    homeController1.tabBarItem.title = @"首页";
-    homeController1.tabBarItem.image = [UIImage imageNamed:@"page.png"];
-    homeController1.tabBarItem.selectedImage = [UIImage imageNamed:@"ipage_selected.png"];
+    HomeViewController *home = [HomeViewController new];
+    home.tabBarItem.title = @"首页";
+    home.tabBarItem.image = [UIImage imageNamed:@"page.png"];
+    home.tabBarItem.selectedImage = [UIImage imageNamed:@"page_selected.png"];
     
-    UIViewController *tabViewController2 = [[UIViewController alloc]init];
-    tabViewController2.view.backgroundColor = [UIColor whiteColor];
-    tabViewController2.tabBarItem.title = @"喜欢";
-    tabViewController2.tabBarItem.image = [UIImage imageNamed:@"like.png"];
-    tabViewController2.tabBarItem.selectedImage = [UIImage imageNamed:@"like_selected.png"];
+    UIViewController *video = [[UIViewController alloc]init];
+    video.view.backgroundColor = [UIColor lightGrayColor];
+    video.tabBarItem.title = @"视频";
+    video.tabBarItem.image = [UIImage imageNamed:@"video.png"];
+    video.tabBarItem.selectedImage = [UIImage imageNamed:@"video_selected.png"];
     
+    UIViewController *recommend = [[UIViewController alloc]init];
+    recommend.view.backgroundColor = [UIColor whiteColor];
+    recommend.tabBarItem.title = @"推荐";
+    recommend.tabBarItem.image = [UIImage imageNamed:@"like.png"];
+    recommend.tabBarItem.selectedImage = [UIImage imageNamed:@"like_selected.png"];
     
-    UIViewController *tabViewController3 = [[UIViewController alloc]init];
-    tabViewController3.view.backgroundColor = [UIColor lightGrayColor];
-    tabViewController3.tabBarItem.title = @"视频";
-    tabViewController3.tabBarItem.image = [UIImage imageNamed:@"video.png"];
-    tabViewController3.tabBarItem.selectedImage = [UIImage imageNamed:@"video_selected.png"];
+    UIViewController *mine = [[UIViewController alloc]init];
+    mine.view.backgroundColor = [UIColor lightGrayColor];
+    mine.tabBarItem.title = @"我的";
+    mine.tabBarItem.image = [UIImage imageNamed:@"home.png"];
+    mine.tabBarItem.selectedImage = [UIImage imageNamed:@"home_selected.png"];
     
-    MineViewController  *viewController4 = [[MineViewController alloc] init];
-    viewController4.view.backgroundColor = [UIColor whiteColor];
-    viewController4.tabBarItem.title = @"我的";
-    viewController4.tabBarItem.image = [UIImage imageNamed:@"home.png"];
-    viewController4.tabBarItem.selectedImage = [UIImage imageNamed:@"home_selected.png"];
+    HelloWorldViewController *helloWorld = [[HelloWorldViewController alloc] init];
+    helloWorld.view.backgroundColor = [UIColor whiteColor];
+    helloWorld.tabBarItem.title = @"HelloWorld";
+    helloWorld.tabBarItem.image = [UIImage imageNamed:@"home.png"];
+    helloWorld.tabBarItem.selectedImage = [UIImage imageNamed:@"home_selected.png"];
     
-    
-    [tabBarController setViewControllers:@[homeController1,tabViewController2,tabViewController3,viewController4]];
+    [tabBarController setViewControllers:@[home,video,recommend,mine,helloWorld]];
     tabBarController.delegate = self;
     
     UINavigationController *navController = [[[UINavigationController alloc]init] initWithRootViewController:tabBarController];
@@ -60,7 +64,7 @@
 
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-    NSLog(@"tabBarController didSelectViewController");
+    //NSLog(@"tabBarController didSelectViewController");
 }
 
 - (void)sceneDidDisconnect:(UIScene *)scene {

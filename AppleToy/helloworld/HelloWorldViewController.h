@@ -1,13 +1,12 @@
 //
-//  ViewController.h
+//  HelloWorldViewController.h
 //  AppleToy
-//
 //  Created by hehaonan on 2022/8/29.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface MineViewController : UIViewController
+@interface HelloWorldViewController : UIViewController
 
 
 @end 

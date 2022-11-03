@@ -1,11 +1,10 @@
 //
-//  ViewController.m
+//  HelloWorldViewController.m
 //  AppleToy
-//
 //  Created by hehaonan on 2022/8/29.
 //
 
-#import "MineViewController.h"
+#import "HelloWorldViewController.h"
 #import "MyTestStruct.h"
 
 @interface CompareNum:NSObject
@@ -36,7 +35,7 @@
 
 @end
 
-@interface MineViewController ()
+@interface HelloWorldViewController ()
 @end
 
 const int TOP = 100;
@@ -48,7 +47,7 @@ const int TOP = 100;
 
 #define BIGGER(x,y) ((x) > (y) ? (x) : (y))
 
-@implementation MineViewController
+@implementation HelloWorldViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

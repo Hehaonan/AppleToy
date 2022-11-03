@@ -12,7 +12,7 @@
 		1B513E082912778B0043E7EE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B513E072912778B0043E7EE /* HomeViewController.m */; };
 		1B8DD2B428BCA5BA00661EA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8DD2B328BCA5BA00661EA3 /* AppDelegate.m */; };
 		1B8DD2B728BCA5BA00661EA3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8DD2B628BCA5BA00661EA3 /* SceneDelegate.m */; };
-		1B8DD2BA28BCA5BA00661EA3 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8DD2B928BCA5BA00661EA3 /* MineViewController.m */; };
+		1B8DD2BA28BCA5BA00661EA3 /* HelloWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8DD2B928BCA5BA00661EA3 /* HelloWorldViewController.m */; };
 		1B8DD2BF28BCA5BB00661EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8DD2BE28BCA5BB00661EA3 /* Assets.xcassets */; };
 		1B8DD2C228BCA5BB00661EA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8DD2C028BCA5BB00661EA3 /* LaunchScreen.storyboard */; };
 		1B8DD2C528BCA5BB00661EA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8DD2C428BCA5BB00661EA3 /* main.m */; };
@@ -29,8 +29,8 @@
 		1B8DD2B328BCA5BA00661EA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1B8DD2B528BCA5BA00661EA3 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		1B8DD2B628BCA5BA00661EA3 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		1B8DD2B828BCA5BA00661EA3 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		1B8DD2B928BCA5BA00661EA3 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		1B8DD2B828BCA5BA00661EA3 /* HelloWorldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldViewController.h; sourceTree = "<group>"; };
+		1B8DD2B928BCA5BA00661EA3 /* HelloWorldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldViewController.m; sourceTree = "<group>"; };
 		1B8DD2BE28BCA5BB00661EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B8DD2C128BCA5BB00661EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B8DD2C328BCA5BB00661EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,13 +50,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B513E022912760A0043E7EE /* mine */ = {
+		1B513E022912760A0043E7EE /* helloworld */ = {
 			isa = PBXGroup;
 			children = (
-				1B8DD2B828BCA5BA00661EA3 /* MineViewController.h */,
-				1B8DD2B928BCA5BA00661EA3 /* MineViewController.m */,
+				1B8DD2B828BCA5BA00661EA3 /* HelloWorldViewController.h */,
+				1B8DD2B928BCA5BA00661EA3 /* HelloWorldViewController.m */,
 			);
-			path = mine;
+			path = helloworld;
 			sourceTree = "<group>";
 		};
 		1B513E03291276C40043E7EE /* home */ = {
@@ -94,7 +94,7 @@
 				1B8DD2B528BCA5BA00661EA3 /* SceneDelegate.h */,
 				1B8DD2B628BCA5BA00661EA3 /* SceneDelegate.m */,
 				1B513E03291276C40043E7EE /* home */,
-				1B513E022912760A0043E7EE /* mine */,
+				1B513E022912760A0043E7EE /* helloworld */,
 				1B8DD2BE28BCA5BB00661EA3 /* Assets.xcassets */,
 				1B8DD2C028BCA5BB00661EA3 /* LaunchScreen.storyboard */,
 				1B8DD2C328BCA5BB00661EA3 /* Info.plist */,
@@ -183,7 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B8DD2BA28BCA5BA00661EA3 /* MineViewController.m in Sources */,
+				1B8DD2BA28BCA5BA00661EA3 /* HelloWorldViewController.m in Sources */,
 				1BAFBE8028BDF136003DB051 /* MyTestStruct.m in Sources */,
 				1B8DD2B428BCA5BA00661EA3 /* AppDelegate.m in Sources */,
 				1B8DD2C528BCA5BB00661EA3 /* main.m in Sources */,
